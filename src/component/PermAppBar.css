@@ -1,0 +1,33 @@
+.App {
+  text-align: left;
+  width: 100%;
+}
+
+
+/*.App-header {
+  height: 50px;
+  width: 100%;
+  background-size: cover;
+}*/
+
+.App-logo {
+  padding-top: 5px;
+  padding-left: 7px;
+}
+
+/*.App-title {
+  padding-left: 0px;
+  padding-right: 0px;
+  color:yellow; 
+  font-weight: bolder;
+  vertical-align: middle;
+  text-align: right;
+}*/
+
+.App-intro {
+  font-size: 19px;
+}
+
+.WhiteStyle {
+  color: "white"
+}

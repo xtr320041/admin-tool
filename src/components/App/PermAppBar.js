@@ -1,6 +1,6 @@
 //import expect from 'expect';
 import React, { Component } from 'react';
-import Background from '../images/bannertop.jpg';
+import Background from '../../images/bannertop.jpg';
 import IconMenu from 'react-toolbox/lib/menu/IconMenu';
 import MenuItem from 'react-toolbox/lib/menu/MenuItem';
 import MenuDivider from 'react-toolbox/lib/menu/MenuDivider';
@@ -40,17 +40,17 @@ var logoStyle = {
 // }
 
 const MainMenu = () => (
-  <IconMenu  icon= {<img src={require('../images/iconMenu.png')} alt="DOC logo"/>} position='topLeft' menuRipple >
-    <MenuItem value='User' icon= {<img src={require('../images/searchUsers.png')} alt="Users"/>} caption='Search User' onClick = {handleClick} />
-    <MenuItem value='Permissions' icon= {<img src={require('../images/searchPerm.png')} alt="Permissions"/>} caption='Search Permissions' onClick={() => {alert('Home'); return true;}}  />
-    <MenuItem value='Home' icon= {<img src={require('../images/home.png')} alt="Home"/>}  caption='Permissions Home Page' />
+  <IconMenu  icon= {<img src={require('../../images/iconMenu.png')} alt="DOC logo"/>} position='topLeft' menuRipple >
+    <MenuItem value='User' icon= {<img src={require('../../images/searchPerm.png')} alt="Users"/>} caption='Search User' onClick = {handleClick} />
+    <MenuItem value='Permissions' icon= {<img src={require('../../images/searchPerm.png')} alt="Permissions"/>} caption='Search Permissions' onClick={() => {alert('Home'); return true;}}  />
+    <MenuItem value='Home' icon= {<img src={require('../../images/home.png')} alt="Home"/>}  caption='Permissions Home Page' />
     <MenuDivider />
-    <MenuItem value='Tool' icon= {<img src={require('../images/tool.png')} alt="Home"/>} caption='Advanced Tool' disabled />
+    <MenuItem value='Tool' icon= {<img src={require('../../images/tool.png')} alt="Home"/>} caption='Advanced Tool' disabled />
   </IconMenu>
 );
 
 const AboutMenu = () => (
-  <IconMenu  icon= {<img src={require('../images/more_vert.png')} alt="DOC logo"/>} position='topRight' >
+  <IconMenu  icon= {<img src={require('../../images/more_vert.png')} alt="DOC logo"/>} position='topRight' >
     <MenuItem value='Search User' caption='Help' />
     <MenuItem value='Search Permissions' caption='About' />
   </IconMenu>
@@ -68,7 +68,7 @@ class PermAppBar extends Component {
             <td width="20px"><MainNav/></td>
             {/* <td width="20px"><MainMenu/></td> */}
             <td style={titleStyle} title="To get started, click on the menu items on the left and select an action..." >Developer Portal</td>
-            <td style={logoStyle}><a><img src={require('../images/bannerlogo.png')} alt="DOC logo"/></a></td>
+            <td style={logoStyle}><a><img src={require('../../images/bannerlogo.png')} alt="DOC logo"/></a></td>
             <td style={logoStyle} width="20px"><AboutMenu/></td>
           </tr>
           </tbody>
